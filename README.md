@@ -19,18 +19,14 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-## Logic Diagram
-### 2 bit Multiplier
+## 2 bit Multiplier:
+
+### Logic Diagram:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/7713750f-65e6-41c0-8082-5005eac4031c)
 
-### 4 Bit Multiplier
+### Verilog Code:
 
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
-
-
-## Verilog code
-### 2 bit Multiplier
 ```
 module HalfAdder(a,b,sum,carry);
 input a,b;
@@ -51,7 +47,19 @@ HalfAdder h0(w1,w2,y[1],w4);
 HalfAdder h1(w3,w4,y[2],y[3]);
 endmodule
 ```
-### 4 Bit Multiplier
+
+### Output:
+
+![2 bit mul](https://github.com/Dhinesh0024/VLSI-LAB-EXP-3/assets/160568927/16989ab9-7e97-4b82-9531-8232c2622d69)
+
+## 4 Bit Multiplier:
+
+### Logic Diagram:
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
+
+### Verilog Code:
+
 ```
 module  ha (a,b,s,c);
 input a,b;
@@ -90,12 +98,12 @@ fa fa8 (w[11],x[3]&y[3],w[17],z[6],z[7]);
 endmodule
 ```
 
-## Output Waveform
+### Output:
 
-### 2 bit Multiplier:
-![2 bit mul](https://github.com/Dhinesh0024/VLSI-LAB-EXP-3/assets/160568927/16989ab9-7e97-4b82-9531-8232c2622d69)
-### 4 Bit Multiplier:
 ![4 bit mul](https://github.com/Dhinesh0024/VLSI-LAB-EXP-3/assets/160568927/102f8ab7-1242-4d1f-ade5-161aa8fd3fc6)
+
+
+
 ## Result:
 Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Xilinx ISE.
 

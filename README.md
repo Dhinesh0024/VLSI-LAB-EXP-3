@@ -1,12 +1,15 @@
-# SIMULATION AND IMPLEMENTATION OF MULTIPLIER
-## AIM:
- To simulate and synthesis multiplier using Xilinx ISE.
+**SIMULATION AND IMPLEMENTATION OF MULTIPLIER**
 
-## APPARATUS REQUIRED:
-Xilinx 14.7
-Spartan6 FPGA
+**AIM:**
+
+ To simulate and synthesis multiplier using Vivado 2023.2.
+
+**APPARATUS REQUIRED:**
+
+Vivado 2023.2
   
-## PROCEDURE:
+**PROCEDURE:**
+
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 STEP:2  Select the device family, device, package and speed.       
 STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
@@ -19,13 +22,13 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-## 2 bit Multiplier:
+**2 BIT MULTIPLIER:**
 
-### Logic Diagram:
+**LOGIC DIAGRAM:**
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/7713750f-65e6-41c0-8082-5005eac4031c)
 
-### Verilog Code:
+**VERILOG CODE:**
 
 ```
 module HalfAdder(a,b,sum,carry);
@@ -48,17 +51,17 @@ HalfAdder h1(w3,w4,y[2],y[3]);
 endmodule
 ```
 
-### Output:
+**OUTPUT:**
 
 ![2 bit mul](https://github.com/Dhinesh0024/VLSI-LAB-EXP-3/assets/160568927/16989ab9-7e97-4b82-9531-8232c2622d69)
 
-## 4 Bit Multiplier:
+**4 BIT MULTIPLIER:**
 
-### Logic Diagram:
+**LOGIC DIAGRAM:**
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
 
-### Verilog Code:
+**VERILOG CODE:**
 
 ```
 module  ha (a,b,s,c);
@@ -98,14 +101,13 @@ fa fa8 (w[11],x[3]&y[3],w[17],z[6],z[7]);
 endmodule
 ```
 
-### Output:
+**OUTPUT:**
 
 ![4 bit mul](https://github.com/Dhinesh0024/VLSI-LAB-EXP-3/assets/160568927/102f8ab7-1242-4d1f-ade5-161aa8fd3fc6)
 
+**RESULT:**
 
-
-## Result:
-Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Xilinx ISE.
+Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Vivado 2023.2
 
 
 
